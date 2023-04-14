@@ -2,9 +2,7 @@ package com.api.book.bootrestbook.services;
 
 import java.util.ArrayList;
 import java.util.List;
-
 import org.springframework.stereotype.Service;
-
 import com.api.book.bootrestbook.entities.books;
 
 @Service
@@ -24,4 +22,10 @@ public class bookServices {
         return list;
     }
 
+    public books addBook(books obj){
+
+        books obj1 = obj;
+        list.add(obj);
+        return obj1;
+    }
 }
